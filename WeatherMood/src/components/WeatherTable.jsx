@@ -43,7 +43,7 @@ export default class WeatherTable extends React.Component{
                 <Row>
                     {weathers.map( (weather , index) =>
                         <Col className={`weather-${index}`} key = {`weather-${index}`} >
-                            <div>{`${weekday[(d.getDay()+index)%7]}`}</div>
+                            <div className='weather-day'>{`${weekday[(d.getDay()+index)%7]}`}</div>
                             <i className={`owf owf-${weather.code}-d owf-5x`}></i>
                             <span>{weather.temp.toFixed(0)}&ordm;</span>
                             &nbsp;{(weather.unit === 'metric')

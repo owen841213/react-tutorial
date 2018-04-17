@@ -1,14 +1,33 @@
 .weather-table {
     text-align: center;
-    background: blanchedalmond;
+    text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3), 0 0 1rem rgba(0, 0, 0, 0.7);
+    color: white;
+    background: rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    width: 80%;
     height: 15rem;
+    margin: auto;
 }
+
+.weather-day{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+
+    margin-bottom: 2rem;
+}
+
+.weather-item {
+    display: inline-block;
+    width:20rem;
+}
+
 
 .weather-table .weather-0 {
     display: none;
 }
 
-/* Portrait and Landscape */
+/* Portrait and Landscape
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -19,12 +38,12 @@
     .weather-table .weather-4 {
         display: none;
     } 
-}
+} */
 
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 374px) 
   and (max-device-width: 667px) {
     .weather-table .weather-3 {
         display: none;
@@ -37,7 +56,7 @@
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 374px) 
   and (max-device-width: 667px) {
     
     .weather-table .weather-3 {

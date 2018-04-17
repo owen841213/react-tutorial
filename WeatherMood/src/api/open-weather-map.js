@@ -66,6 +66,8 @@ export function getForecast(city, unit) {
     // TODO
     var url = `${forecastUrl}&q=${city}&units=${unit}&cnt=5`;
     
+    console.log(`Making forecast request to: ${url}`);
+
     return axios.get(url, { cancelToken: weatherSource.token }).then(function (res) {
         if (res.data.cnt !== 5) {
             throw new Error(res.data.message);

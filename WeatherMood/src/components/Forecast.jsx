@@ -42,7 +42,6 @@ export default class Forecast extends React.Component {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div className={`forecast weather-bg ${this.state.forecast[0].group}`}>
                 <div className={`mask ${this.state.masking ? 'masking' : ''}`}>
