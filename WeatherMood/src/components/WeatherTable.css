@@ -27,38 +27,12 @@
     display: none;
 }
 
-/* Portrait and Landscape
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-   .weather-table .weather-3 {
-        display: none;
-    }
-    .weather-table .weather-4 {
-        display: none;
-    } 
-} */
 
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 374px) 
+  and (min-device-width: 375px) 
   and (max-device-width: 667px) {
-    .weather-table .weather-3 {
-        display: none;
-    }
-    .weather-table .weather-4 {
-        display: none;
-    } 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 374px) 
-  and (max-device-width: 667px) {
-    
     .weather-table .weather-3 {
         display: none;
     }
