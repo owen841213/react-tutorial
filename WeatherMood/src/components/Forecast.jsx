@@ -61,6 +61,8 @@ export default class Forecast extends React.Component {
             city: city // set city state immediately to prevent input text (in WeatherForm) from blinking;
         }, () => { // called back after setState completes
             getForecast(city, unit).then(forecast => {
+                this.notifyCityChange(city);
+                this.notifyUnitChange(unit);
                 this.setState({
                     // first: forecast[0],
                     forecast: forecast,
@@ -77,6 +79,18 @@ export default class Forecast extends React.Component {
                 masking: false
             });
         }, 200);
+    }
+
+    notifyCityChange(city) {
+        if (this.props.city !== city) {
+            this.props.onCityChange(city);
+        }
+    }
+
+    notifyUnitChange(unit) {
+        if (this.props.units !== unit) {
+            this.props.onUnitChange(unit);
+        }
     }
 
     handleFormQuery(city, unit) {

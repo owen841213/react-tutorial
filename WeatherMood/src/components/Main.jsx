@@ -60,7 +60,7 @@ export default class Main extends React.Component {
                         <Today unit={this.state.unit} onUnitChange={this.handleUnitChange} onCityChange={this.handleCityChange}/>
                     )}/>
                     <Route exact path="/forecast" render={() => (
-                        <Forecast unit={this.state.unit} city={this.state.city} onUnitChange={this.handleUnitChange} />
+                        <Forecast unit={this.state.unit} city={this.state.city} onCityChange={this.handleCityChange} onUnitChange={this.handleUnitChange} />
                     )}/>
                 </div>
             </Router>
