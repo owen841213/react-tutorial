@@ -90,8 +90,8 @@ export default class WeatherForm extends React.Component {
     }
 
     handleTempToggle(e) {
-        this.setState((prevState, props) => ({
-            tempToggle: !prevState.tempToggle
+        this.setState(() => ({
+            tempToggle: !this.state.tempToggle
         }));
     }
 }
